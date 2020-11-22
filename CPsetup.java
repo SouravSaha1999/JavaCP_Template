@@ -209,7 +209,12 @@ class Graph{
 				}
 			}
 		}
-//		printPath(dist);
+		printPath(dist);
+	}
+	
+	void printPath(int[] dist) {
+		System.out.println("Vertex \t Distance from source");
+		for(int i=0; i<V; i++) System.out.println(i+" \t\t "+dist[i]);
 	}
 	
 	int minDist(int[] dist , boolean[] sp) {
